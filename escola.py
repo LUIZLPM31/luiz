@@ -1,10 +1,12 @@
+import streamlit as st
+
 class Escola:
     def __init__(self, nome, endereco):
         self.nome = nome
         self.endereco = endereco
 
     def exibir_informacoes(self):
-        print(f"Escola: {self.nome}, Endereço: {self.endereco}")
+       st.text(f"Escola: {self.nome}, Endereço: {self.endereco}")
 
 class Aluno:
     def __init__(self, nome, matricula, nascimento):
@@ -13,7 +15,7 @@ class Aluno:
         self.nascimento = nascimento
 
     def exibir_informacoes(self):
-        print(f"Aluno: {self.nome}, Matrícula: {self.matricula}, Nascimento: {self.nascimento}")
+        st.text(f"Aluno: {self.nome}, Matrícula: {self.matricula}, Nascimento: {self.nascimento}")
 
 class Professor:
     def __init__(self, nome, disciplina, salario):
@@ -22,7 +24,7 @@ class Professor:
         self.salario = salario
 
     def exibir_informacoes(self):
-        print(f"Professor: {self.nome}, Disciplina: {self.disciplina}, Salário: {self.salario}")
+        st.text(f"Professor: {self.nome}, Disciplina: {self.disciplina}, Salário: {self.salario}")
 
 class Curso:
     def __init__(self, nome, codigo):
@@ -30,7 +32,7 @@ class Curso:
         self.codigo = codigo
 
     def exibir_informacoes(self):
-        print(f"Curso: {self.nome}, Código: {self.codigo}")
+        st.text(f"Curso: {self.nome}, Código: {self.codigo}")
 
 # Exemplo de uso
 escola1 = Escola("Escola Primária", "Rua das Flores, 123")
